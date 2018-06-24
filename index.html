@@ -1,0 +1,285 @@
+<!doctype html>
+<html>
+	<head>
+	<!-- 放置css meta title-->
+		<meta charset="utf-8" />
+		<title>admin-order</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="icon" type="image/png" href="favicon.png" />
+		<meta http-equiv="Cache-control" content="public" />
+		<meta name="author" content="Billy Ji" />
+		<meta name="copyright" content="Billy Ji" />
+		<meta name="keywords" content="" />
+		<meta name="description"  content="" />
+		<meta name="distribution" content="Taiwan" />
+		<meta name="robots" content="all" />
+
+		<!-- 瀏覽器支援度 -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+		<meta http-equiv="X-UA-Compatible" content="IE=9" />
+		<!-- 瀏覽器支援度 END -->
+
+		<meta content="INDEX, FOLLOW" name='ROBOTS' />
+		<meta content="3 DAYS" name='REVISIT-AFTER' />
+
+		<!-- share -->
+		<meta property="og:title" content=""/>
+		<meta property="og:type" content="website"/>
+		<meta property="og:url" content="" />
+		<meta property="og:image" content="" />
+		<meta property="og:site_name" content="" />
+		<meta property="og:description" content="" />
+		<!--  share END -->
+
+
+	<!--css-->
+		<!--reset-->
+		<!-- <link href="css/reset.css" rel="stylesheet" type="text/css"> -->
+
+		<!-- bootstrap 3.3.7 -->
+		<!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+
+		<!-- ui -->
+		<link rel="stylesheet" href="css/jquery-ui.min.css">
+
+		<!-- Owl Carousel -->
+		<link rel="stylesheet" href="css/owl.carousel.css">
+		<link rel="stylesheet" href="css/owl.carousel.min.css">
+		<link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+		<!-- Animate -->
+		<link href="css/animate.css" rel="stylesheet">
+
+		<!-- 字型icon 舊-->
+		<!-- <link href="css/font-awesome.min.css" rel="stylesheet"> -->
+		<link href="css/fontawesome-all.min.css" rel="stylesheet">
+		
+
+		<!-- lightbox -->
+		<link href="css/lity.min.css" rel="stylesheet">
+
+		<!-- Roboto 字型 -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+		<!-- all -->
+		<link href="css/all.css" rel="stylesheet" type="text/css">
+
+	</head>
+
+	<!-- ontouchstart iphone hover支援 -->
+	<body ontouchstart>
+
+		<!--header-->
+		<header>
+			<div class="container">
+				<h1 class="title logo"><a href="index.html">Shoptime</a></h1>
+				<div class="menu">
+					<a href="index.html" class="menu-list active">HOME</a>
+					<a href="order.html" class="menu-list">ORDERS</a>
+					<a href="product.html" class="menu-list">PRODUCT</a>
+				</div>
+				<h3 class="admin">ADMIN</h3>
+			</div>
+		</header>
+		<!-- // header -->
+
+		<div class="main">
+			<div class="container">
+				<div class="main-title">
+					<h1 class="title">OVERVIEW</h1>
+					<div class="info-time">
+						<div class="info-time-date">
+							<span>2018/6/6</span>
+							<i class="fas fa-caret-right"></i>
+							<span>2018/6/13</span>
+						</div>
+						<div class="info-time-select">
+							<span>Weekly</span>
+							<i class="fas fa-sort-down"></i>
+						</div>
+					</div>	
+				</div>
+
+				<section class="section-num">
+					<ul>
+						<li>
+							<div class="list-text">
+								<i class="fas fa-hand-holding-usd"></i>
+								TOTAL REVENUE
+							</div>
+							<div class="list-num green">54,540</div>
+						</li>
+						<li>
+							<div class="list-text">
+								<i class="fas fa-boxes"></i>
+								TOTAL COST
+							</div>
+							<div class="list-num red">12,660</div>
+						</li>
+						<li>
+							<div class="list-text">
+								<i class="fas fa-money-bill"></i>
+								NET INCOME
+							</div>
+							<div class="list-num blue">41,880</div>
+						</li>
+					</ul>
+				</section>
+
+				<section class="section-activity">
+					<h1 class="title">Activity</h1>
+					<div class="chart-box">
+						<canvas id="myChart" width="400" height="400"></canvas>
+					</div>
+				</section>
+
+				<section class="section-otherinfo">
+					<div class="transaction">
+						<h1 class="title">Transaction Website</h1>
+						<ul class="transaction-list">
+							<li>
+								<div class="tran-list-pic"><i class="fab fa-facebook"></i></div>
+								<div class="tran-list-name">Facebook.com</div>
+								<div class="tran-list-num">45,836</div>
+								<div class="tran-list-percent"><i class="fas fa-arrow-up green"></i>20%</div>
+							</li>
+							<li>
+								<div class="tran-list-pic"><i class="fab fa-google"></i></div>
+								<div class="tran-list-name">Facebook.com</div>
+								<div class="tran-list-num">45,836</div>
+								<div class="tran-list-percent"><i class="fas fa-arrow-up green"></i>20%</div>
+							</li>
+							<li>
+								<div class="tran-list-pic"><i class="fas fa-shopping-bag"></i></i></div>
+								<div class="tran-list-name">Facebook.com</div>
+								<div class="tran-list-num">45,836</div>
+								<div class="tran-list-percent"><i class="fas fa-arrow-down red"></i>20%</div>
+							</li>
+							<li>
+								<div class="tran-list-pic"><i class="fab fa-wordpress-simple"></i></div>
+								<div class="tran-list-name">Facebook.com</div>
+								<div class="tran-list-num">45,836</div>
+								<div class="tran-list-percent"><i class="fas fa-arrow-down red"></i>20%</div>
+							</li>
+						</ul>
+					</div>
+					<div class="latest">
+						<h1 class="title">Latest Orders</h1>
+						<ul class="latest-list">
+							<li>
+								<div class="latest-list-pic">
+									<img src="images/pic1.png" alt="">
+								</div>
+
+								<div class="latest-list-info">
+									<h2 class="subtitle">Vintage T-shirt</h2>
+									<div class="time">
+										<i class="far fa-clock"></i>
+										<span>2018/6/13  13:42</span>
+									</div>
+									<div class="people">
+										<i class="fas fa-male"></i>
+										<span>Belle Willis</span>
+									</div>
+								</div>
+
+								<div class="latest-list-total">
+									<p>Total</p> 
+									<h2 class="subtitle">3,200</h2>
+								</div>
+							</li>
+							<li>
+								<div class="latest-list-pic">
+									<img src="images/pic1.png" alt="">
+								</div>
+								<div class="latest-list-info">
+									<h2 class="subtitle">Cowboy Jacket</h2>
+									<div class="time">
+										<i class="far fa-clock"></i>
+										<span>2018/6/13  10:45</span>
+									</div>
+									<div class="people">
+										<i class="fas fa-male"></i>
+										<span>Adrian Cummings</span>
+									</div>
+								</div>
+
+								<div class="latest-list-total">
+									<p>Total</p> 
+									<h2 class="subtitle">3,200</h2>
+								</div>
+							</li>
+							<li>
+								<div class="latest-list-pic">
+									<img src="images/pic1.png" alt="">
+								</div>
+								<div class="latest-list-info">
+									<h2 class="subtitle">Coach Coat</h2>
+									<div class="time">
+										<i class="far fa-clock"></i>
+										<span>2018/6/13  8:26</span>
+									</div>
+									<div class="people">
+										<i class="fas fa-male"></i>
+										<span>Belle Willis</span>
+									</div>
+								</div>
+
+								<div class="latest-list-total">
+									<p>Total</p> 
+									<h2 class="subtitle">3,200</h2>
+								</div>
+							</li>
+						</ul>
+					</div>
+				
+				</section>
+			</div>
+		</div>
+
+
+		
+
+
+		<!--JavaScript-->
+
+			<!-- plugins -->
+
+			<script type="text/javascript" src="js/jquery_2.2.4_min.js"></script>
+
+			<!--ui-->
+			<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+
+			<!-- bootstrap -->
+			<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+			<!-- Owl Carousel -->
+			<script src="js/owl.carousel.min.js"></script>
+
+			<!-- wow -->
+			<script src="js/wow.min.js" type="text/javascript"></script>
+
+			<!-- lightbox -->
+			<script src="js/lity.min.js" type="text/javascript"></script>
+
+			<!-- PIE.htc 讓css3某些屬性能for IE -->
+			<!-- <script src="js/PIE.htc" type="text/javascript"></script> -->
+
+			<!-- // plugins -->
+			<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.bundle.min.js" type="text/javascript"></script> -->
+			
+			<script src="js/Chart.bundle.min.js" type="text/javascript"></script>
+			
+
+
+			<!-- customized -->
+
+			<script src="js/all.js" type="text/javascript"></script>
+
+			<!-- // customized -->
+
+		<!-- // JavaScript-->
+
+
+	</body>
+</html>

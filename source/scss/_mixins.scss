@@ -1,0 +1,129 @@
+
+//  ----Variables 
+// color
+$color-black: #000000;
+$color-white: white;
+$color-red: #D0021B;
+$color-yellow: #F5A623;
+$color-blue: #4A90E2;
+$color-green: #7ED321;
+$color-graylight-1: #F2F2F2;
+$color-graylight-2: #E1E1E1;
+$color-graydark-1: #C8C8C8;
+$color-graydark-2: #757575;
+
+// font-size
+$title-size: 24px;
+$subtitle-size: 20px;
+$subtitle-size-2: 16px;
+$table-info-size: 14px;
+$remark-size: 16px;
+$placeholder-size: 16px;
+$web-boxshadow: 0 0 7px 3px #EBEBEB;
+
+
+//  ----Variables END 
+
+
+// Mixins
+
+
+@mixin transition($transition){
+    -webkit-transition: $transition;
+    -moz-transition: $transition;
+    -ms-transition: $transition;
+    -o-transition: $transition;
+    transition: $transition;
+}
+
+
+@mixin transform($property){
+    -webkit-transform: $property;
+    -moz-transform: $property;
+    -ms-transform: $property;
+    -o-transform: $property;
+    transform: $property;
+}
+
+  
+@mixin box-shadow($property){
+    box-shadow: $property;
+    -moz-box-shadow: $property;
+    -webkit-box-shadow: $property;
+    -o-box-shadow: $property;
+}
+
+
+
+@mixin centerVH{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    @include transform(translateY(-50%));
+}
+
+
+@mixin clearfix() {
+    &:after {
+      display: block;
+      content: "";
+      clear: both;
+    }
+}
+
+
+@mixin html{
+    width: 100%;
+    line-height: 1.7;
+    word-wrap: break-word;
+    word-break: normal;
+    img{
+        height: auto !important;
+    }
+    iframe{
+        height: auto !important
+    }
+};
+
+@mixin btn($color-bg){
+    display: inline-block;
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: $color-bg;
+    border-radius: 4px;
+    cursor: pointer;
+    @include transition(all 0.3s);
+
+    &:hover,&.active{
+        background-color: lighten($color-bg, 10%);
+    }
+}
+
+
+// rwd
+@mixin desk(){
+    @media (max-width:1100) {
+        @content
+    }
+};
+
+@mixin pad(){
+    @media (max-width:768) {
+        @content
+    }
+};
+
+@mixin phone(){
+    @media (max-width:320) {
+        @content
+    }
+};
+  // rwd END
+
+// Mixins END 
+
+

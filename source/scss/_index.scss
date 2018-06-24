@@ -1,0 +1,176 @@
+/* ---------------------------------------------------------- */
+/* index */
+
+.main-title{
+    margin-bottom: 20px;
+    @include clearfix();
+    > *{
+        width: 50%;
+        float: left;
+    }
+    h1{
+        font-weight: bold;
+        color: #000;
+    }
+    .info-time{
+        text-align: right;
+        color: #9b9b9b;
+        font-size: 15px;
+        font-weight: bold;
+        > * {
+            display: inline-block;
+
+        }
+        .info-time-date{
+            margin-right: 15px;
+        }
+        .fas.fa-sort-down, .fas.fa-caret-right{
+            color: #000;
+        }
+    }
+}
+
+
+.section-num{
+    margin-bottom: 18px;
+    ul{
+        width: 100%;
+        @include clearfix();
+    }
+    ul li{
+        width: 300px;
+        float: left;
+        background-color: #ffffff;
+        text-align: center;
+        padding: 30px 0;
+        box-shadow: $web-boxshadow;
+    }
+    ul li:nth-child(2){
+        margin: 0 20px;
+    }
+    .list-text{
+        color: #000;
+        margin-bottom: 16px;
+        font-size: $remark-size;
+        .fas{
+            font-size: 23px;
+            vertical-align: middle;
+        }
+    }
+    .list-num{
+        font-size: 36px;
+        font-weight: bold;
+    }
+}
+
+.section-activity{
+    background-color: #fff;
+    padding: 30px 40px;
+    margin-bottom: 20px;
+    box-shadow: $web-boxshadow;
+    h1{
+        color: #000;
+        font-weight: bold;
+    }
+}
+
+.section-otherinfo{
+    @include clearfix();
+    > * {
+        float: left;
+        width: 380px;
+        padding: 30px 40px;
+        background-color: #fff;
+        color: #000;
+        font-weight: bold;
+        box-shadow: $web-boxshadow;
+    }
+
+    .transaction{
+        margin-right: 20px;
+    }
+    h1.title{
+        margin-bottom: 20px;
+    }
+    .transaction-list li{
+        padding: 24px 0;
+        border-bottom: solid 1px #EBEBEB;
+        > *{
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .tran-list-pic{
+            width: 60px;
+            font-size: 45px;
+            text-align: center;
+        }
+        .tran-list-name{
+            width: 160px;
+            color: #9B9B9B;
+            font-size: $remark-size;
+        }
+        .tran-list-num{
+            width: 80px;
+            font-size: 20px;
+            color: #000000;
+        }
+
+        .tran-list-percent{
+            .fas{
+                margin-right: 8px;
+                font-size: 18px;
+            }
+        }
+    }
+
+    .latest{
+        .latest-list li {
+            padding: 8px 0;
+            border-bottom:solid 1px #e8e8e8; 
+            > div{
+                display: inline-block;
+                vertical-align: middle;
+            }
+            .latest-list-pic{
+                width: 105px;
+                height: 105px;
+                margin-right: 20px;
+            }
+            .latest-list-info{
+                width: 180px;
+            }
+            .subtitle{
+                margin-bottom: 8px;
+            }
+            .time,.people{
+                color: #9B9B9B;
+                font-size: 16px;
+                font-weight: normal;
+                margin-bottom: 8px;
+                .fa-clock,.fa-male{
+                    width: 20px;
+                    text-align: center;
+                }
+            }
+
+            .latest-list-total{
+                width: 65px;
+                text-align: right;
+                vertical-align: bottom;
+                p{
+                    font-size: 14px;
+                    font-weight: 500;
+                }
+                h2.subtitle{
+                    margin-top: 3px;
+                }
+            }
+        }
+    }
+}
+
+
+/* index END */
+/* ---------------------------------------------------------- */
+

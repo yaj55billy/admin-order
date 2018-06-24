@@ -1,0 +1,87 @@
+/* ---------------------------------------------------------- */
+/* layout */
+
+.container{
+    width: 940px;
+    margin: 0 auto;
+}
+
+
+body {
+    font-family: Arial,serif,sans-serif;
+}
+
+.main{
+    padding: 30px 0 42px;
+    color: $color-graylight-1;
+}
+
+img{
+    max-width: 100%;
+    min-height: 100%;
+    height: auto;
+}
+
+h1.title {
+    font-size: $title-size;
+}
+
+h2{
+    font-size: $subtitle-size;
+}
+
+h3{
+    font-size: $subtitle-size-2;
+}
+
+.green{
+    color: $color-green;
+}
+
+.red{
+    color: $color-red;
+}
+
+.blue{
+    color: $color-blue;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.btn.btn-green{
+    @include btn($color-green);
+}
+
+.btn.btn-gray{
+    @include btn(#9b9b9b);
+}
+
+.btn.btn-orange{
+    @include btn($color-yellow);
+}
+
+.btn.btn-blue{
+    @include btn($color-blue);
+}
+
+.btn.btn-black{
+    @include btn(#000);
+}
+
+.btn.btn-transparent{
+    @include btn(transparent);
+    color: #000;
+}
+
+/* layout END */
+/* ---------------------------------------------------------- */
